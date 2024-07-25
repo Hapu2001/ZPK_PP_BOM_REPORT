@@ -1,0 +1,4 @@
+@EndUserText.label: 'BOM Reporting'
+define service ZPP_BOM_REPORT {
+  expose ZPP_I_BOM_REPORTING;
+}

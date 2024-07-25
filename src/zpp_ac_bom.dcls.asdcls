@@ -1,0 +1,11 @@
+@EndUserText.label: 'BOM access controll'
+@MappingRole: true
+define role ZPP_AC_BOM {
+    grant 
+        select
+            on
+                ZPP_I_BOM_REPORTING
+                    where
+                        (Plant) = aspect pfcg_auth(ZAO_WERKS, ZAF_PLANT, ACTVT= '03');
+                        
+}
